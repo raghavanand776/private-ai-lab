@@ -28,7 +28,8 @@ Many companies (healthcare, fintech, small businesses) want AI without sending s
 - [x] **Week 1, Day 1:** installed Ollama, ran Qwen3 8B locally, verified it works fully offline
 - [x] **Week 1, Day 2:** called the local model from Python and measured speed (`chat_basic.py`)
 - [x] **Week 1, Day 3:** compared Qwen3 8B vs. Llama 3.2 3B on speed and answer quality (`compare_models.py`)
-- [ ] Week 1, Days 4–5: tool calling with a local model
+- [x] **Week 1, Day 4:** first tool-using agent: the local model calls a Python tool (`get_current_time`) instead of guessing (`agent_v1.py`)
+- [ ] Week 1, Day 5: two tools + the stock price lesson
 - [ ] Week 2: custom MCP server + prompt-injection testing
 - [ ] Week 3: Tailscale private network + Aperture gateway
 - [ ] Week 4: guardrails, evals, tests and CI
@@ -69,3 +70,4 @@ Both answered all 5 questions correctly; neither invented a stock price.
 | --- | --- |
 | `chat_basic.py` | Sends one question to the local model, prints its reasoning and answer, and reports time and tokens/second |
 | `compare_models.py` | Asks two local models the same 5 questions, prints a speed table, saves answers to `results.md` |
+| `agent_v1.py` | First agent: gives the local model a `get_current_time` tool and prints each step of the tool loop |
