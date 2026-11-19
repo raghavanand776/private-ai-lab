@@ -29,7 +29,7 @@ Many companies (healthcare, fintech, small businesses) want AI without sending s
 - [x] **Week 1, Day 2:** called the local model from Python and measured speed (`chat_basic.py`)
 - [x] **Week 1, Day 3:** compared Qwen3 8B vs. Llama 3.2 3B on speed and answer quality (`compare_models.py`)
 - [x] **Week 1, Day 4:** first tool-using agent: the local model calls a Python tool (`get_current_time`) instead of guessing (`agent_v1.py`)
-- [ ] Week 1, Day 5: two tools + the stock price lesson
+- [x] **Week 1, Day 5:** agent with two tools (time + stock price with demo data): picks the right tool, passes inputs, admits unknown tickers
 - [ ] Week 2: custom MCP server + prompt-injection testing
 - [ ] Week 3: Tailscale private network + Aperture gateway
 - [ ] Week 4: guardrails, evals, tests and CI
