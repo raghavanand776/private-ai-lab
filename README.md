@@ -31,7 +31,8 @@ Many companies (healthcare, fintech, small businesses) want AI without sending s
 - [x] **Week 1, Day 4:** first tool-using agent: the local model calls a Python tool (`get_current_time`) instead of guessing (`agent_v1.py`)
 - [x] **Week 1, Day 5:** agent with two tools (time + stock price with demo data): picks the right tool, passes inputs, admits unknown tickers
 - [x] **Week 2, Day 1:** eval harness (`evals.py`): 10 test cases scoring tool choice, answer facts and honesty. Qwen3 10/10, Llama 3.2 4/10, 0 unsafe for both
-- [ ] Week 2, Days 2–6: custom MCP server, real data tool, prompt-injection testing and safety evals
+- [x] **Week 2, Day 2:** first MCP server (`hello_server.py`, MCP Python SDK v2.3.0) with a tool, a resource and a prompt, tested in the MCP Inspector
+- [ ] Week 2, Days 3–6: lab tools as an MCP server, agent as MCP client, real data tool, safety evals
 - [ ] Week 3: Tailscale private network + Aperture gateway
 - [ ] Week 4: guardrails, advanced evals, tests and CI
 
@@ -95,3 +96,4 @@ Key finding: Llama 3.2 answered plain questions correctly on Day 3, but with too
 | `results.md` | Saved answers from the model comparison |
 | `agent_v1.py` | Tool-using agent with two tools (time + demo stock price); `run_agent()` returns the answer and tools used |
 | `evals.py` | Eval harness: runs 10 test cases on each model and scores right tool, right answer, and never-do rules |
+| `hello_server.py` | First MCP server: one tool (`add`), one resource (`greeting://{name}`), one prompt (`explain_simply`) |
